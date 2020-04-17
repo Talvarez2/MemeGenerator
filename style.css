@@ -1,0 +1,100 @@
+.One {
+    color: green;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 30px;
+    margin: -10;
+    margin-bottom: 30;
+}
+
+header img {
+    border-radius: 20%;
+    width: 150px;
+    height: auto;
+    float: left;
+    padding: 5px;
+}
+
+header div {
+    text-align: center;
+    padding: 40px;
+}
+
+header div text{
+    color: wheat;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    font: 60px Arial, sans-serif;
+}
+
+div p {
+    padding: 400;
+}
+
+.meme {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.top {
+    position: absolute;
+    top: 7%;
+    left: 0px;
+    width: 100%;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 7%;
+    left: 0px;
+    width: 100%;
+}
+
+.meme h2 {
+    color: white;
+    font-size: 40px;
+    text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
+}
+
+.meme-form {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+.meme-form button {
+    position: absolute;
+    top:50%;
+    right: 0;
+    width: 120px;
+    transform: translateY(-50%);
+    background-color: purple; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.meme-form input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-left: 5%;
+    margin-right: 5%;
+}
