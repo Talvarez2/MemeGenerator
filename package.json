@@ -1,4 +1,5 @@
 {
+  "homepage": "https://talvarez2.github.io/MemeGenerator/"
   "name": "first_project",
   "version": "1.0.0",
   "description": "My New Project description.",
@@ -10,12 +11,15 @@
   "author": "Your Name <you@example.com>",
   "license": "MIT",
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "react-scripts": "^3.4.1"
   },
   "browserslist": {
