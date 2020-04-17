@@ -1,3 +1,38 @@
 .One {
     color: green;
 }
+
+header {
+    padding: 10px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 30px;
+    margin: -10;
+    margin-bottom: 10;
+}
+
+header img {
+    border-radius: 20%;
+    width: 150px;
+    height: auto;
+    float: left;
+    padding: 5px;
+}
+
+header div {
+    text-align: center;
+    padding: 40px;
+}
+
+header div text{
+    color: wheat;
+    text-align: center;
+    text-transform: uppercase;
+    margin: auto;
+    font: 60px Arial, sans-serif;
+}
+
+div p {
+    padding: 400;
+}
