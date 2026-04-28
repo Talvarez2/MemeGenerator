@@ -23,9 +23,9 @@ yarn deploy    # Deploy to GitHub Pages
 
 | Dependency | Version | Purpose |
 |------------|---------|---------|
-| [React](https://reactjs.org/) | 16.x | UI framework (functional components with hooks) |
-| [react-scripts](https://create-react-app.dev/) | 3.x | Build tooling (Create React App) |
-| [gh-pages](https://github.com/tschaub/gh-pages) | 2.x | GitHub Pages deployment |
+| [React](https://reactjs.org/) | ^16.13.1 | UI framework (functional components with hooks) |
+| [react-scripts](https://create-react-app.dev/) | ^3.4.1 | Build tooling (Create React App) |
+| [gh-pages](https://github.com/tschaub/gh-pages) | ^2.2.0 | GitHub Pages deployment |
 
 ## Project Structure
 
