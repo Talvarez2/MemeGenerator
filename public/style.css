@@ -1,5 +1,7 @@
-.One {
-    color: green;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -8,8 +10,7 @@ header {
     background: black;
     color: white;
     font-size: 30px;
-    margin: -10;
-    margin-bottom: 30;
+    margin-bottom: 30px;
 }
 
 header img {
@@ -25,7 +26,7 @@ header div {
     padding: 40px;
 }
 
-header div text{
+header div span {
     color: wheat;
     text-align: center;
     text-transform: uppercase;
@@ -33,8 +34,15 @@ header div text{
     font: 60px Arial, sans-serif;
 }
 
-div p {
-    padding: 400;
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 .meme {
@@ -46,14 +54,14 @@ div p {
 .top {
     position: absolute;
     top: 7%;
-    left: 0px;
+    left: 0;
     width: 100%;
 }
 
 .bottom {
     position: absolute;
     bottom: 7%;
-    left: 0px;
+    left: 0;
     width: 100%;
 }
 
@@ -71,21 +79,22 @@ div p {
     text-align: center;
     position: relative;
     width: 100%;
+    padding: 10px 0;
 }
+
 .meme-form button {
-    position: absolute;
-    top:50%;
-    right: 0;
-    width: 120px;
-    transform: translateY(-50%);
-    background-color: purple; /* Green */
+    background-color: purple;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.meme-form button:hover {
+    background-color: #6a0dad;
 }
 
 .meme-form input {
