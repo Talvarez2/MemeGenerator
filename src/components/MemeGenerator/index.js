@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function MemeGenerator() {
     const [topText, setTopText] = useState("");
     const [bottomText, setBottomText] = useState("");
-    const [randomImg, setRandomImg] = useState("http://i.imgflip.com/1bij.jpg");
+    const [randomImg, setRandomImg] = useState("https://i.imgflip.com/1bij.jpg");
     const [allMemeImgs, setAllMemeImgs] = useState([]);
 
     useEffect(() => {
@@ -12,11 +12,13 @@ function MemeGenerator() {
             .then(response => {
                 const { memes } = response.data;
                 setAllMemeImgs(memes);
-            });
+            })
+            .catch(error => console.error("Failed to fetch memes:", error));
     }, []);
 
     function handleSubmit(event) {
         event.preventDefault();
+        if (allMemeImgs.length === 0) return;
         const randNum = Math.floor(Math.random() * allMemeImgs.length);
         setRandomImg(allMemeImgs[randNum].url);
     }

@@ -21,16 +21,11 @@ header img {
     padding: 5px;
 }
 
-header div {
-    text-align: center;
-    padding: 40px;
-}
-
-header div span {
+header h1 {
     color: wheat;
     text-align: center;
     text-transform: uppercase;
-    margin: auto;
+    padding: 40px;
     font: 60px Arial, sans-serif;
 }
 

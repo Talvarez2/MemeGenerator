@@ -1,15 +1,9 @@
 {
-  "homepage": "https://talvarez2.github.io/MemeGenerator",
-  "name": "first_project",
+  "name": "meme-generator",
   "version": "1.0.0",
-  "description": "My New Project description.",
-  "main": "index.js",
-  "repository": {
-    "url": "https://example.com/your-username/my-new-project",
-    "type": "git"
-  },
-  "author": "Your Name <you@example.com>",
-  "license": "MIT",
+  "description": "A React meme generator that fetches templates from the imgflip API and overlays custom text.",
+  "homepage": "https://talvarez2.github.io/MemeGenerator",
+  "private": true,
   "scripts": {
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
@@ -19,8 +13,12 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "gh-pages": "^2.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
   },
   "browserslist": {
     "production": [
