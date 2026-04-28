@@ -28,8 +28,8 @@ yarn deploy     # Deploy to GitHub Pages
 
 - **Functional components** with hooks (`useState`, `useEffect`) — no class components
 - **One component per directory** under `src/components/`, exported from `index.js`
-- **Semantic HTML** — use `<header>`, `<main>`, `<h1>`, `<label>`, etc.
-- **Accessibility** — all inputs must have associated labels (use `sr-only` class for visually hidden labels)
+- **Semantic HTML** — use `<header>`, `<main>`, `<span>` for decorative text, etc.
+- **Accessibility** — all inputs must have associated labels (use `sr-only` class for visually hidden labels); decorative overlay text uses `aria-hidden="true"`; interactive elements must have visible focus styles
 - **No TypeScript** — plain JavaScript with JSX
 - **Styles** — plain CSS in `public/style.css` (not CSS-in-JS or modules)
 - **API calls** — use `fetch` in `useEffect` with empty dependency array for mount-time requests; always add `.catch()` for error handling

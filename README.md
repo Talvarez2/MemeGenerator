@@ -21,9 +21,11 @@ yarn deploy    # Deploy to GitHub Pages
 
 ## Tech Stack
 
-- **React 16** — UI framework (functional components with hooks)
-- **react-scripts 3** — Build tooling (Create React App)
-- **gh-pages** — GitHub Pages deployment
+| Dependency | Version | Purpose |
+|------------|---------|---------|
+| [React](https://reactjs.org/) | 16.x | UI framework (functional components with hooks) |
+| [react-scripts](https://create-react-app.dev/) | 3.x | Build tooling (Create React App) |
+| [gh-pages](https://github.com/tschaub/gh-pages) | 2.x | GitHub Pages deployment |
 
 ## Project Structure
 

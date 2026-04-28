@@ -60,14 +60,25 @@ header h1 {
     width: 100%;
 }
 
-.meme h2 {
+.meme span {
     color: white;
     font-size: 40px;
+    font-weight: bold;
     text-shadow:
         0.07em 0 black,
         0 0.07em black,
         -0.07em 0 black,
         0 -0.07em black;
+}
+
+.meme-form button:focus-visible {
+    outline: 2px solid #6a0dad;
+    outline-offset: 2px;
+}
+
+.meme-form input:focus-visible {
+    outline: 2px solid #6a0dad;
+    outline-offset: 1px;
 }
 
 .meme-form {

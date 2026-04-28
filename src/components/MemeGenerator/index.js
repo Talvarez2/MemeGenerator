@@ -47,9 +47,9 @@ function MemeGenerator() {
                 <button type="submit">Generate</button>
             </form>
             <div className="meme">
-                <img src={randomImg} alt="Generated meme" />
-                <h2 className="top">{topText}</h2>
-                <h2 className="bottom">{bottomText}</h2>
+                <img src={randomImg} alt={topText || bottomText ? `Meme: ${topText} ${bottomText}`.trim() : "Meme template"} />
+                <span className="top" aria-hidden="true">{topText}</span>
+                <span className="bottom" aria-hidden="true">{bottomText}</span>
             </div>
         </main>
     );
